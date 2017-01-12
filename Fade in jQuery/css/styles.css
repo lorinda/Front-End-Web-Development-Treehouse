@@ -1,0 +1,52 @@
+
+.arrow {
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    position: fixed;
+    margin-left: 0px;
+    animation: indicate 2s linear infinite;
+	background-color: #000;
+}
+
+.arrow::before {
+    width: 100px;
+    position: absolute;
+    text-align: center;
+    font: .75em 'Arial';
+	color: #fff;
+    content: "Scroll Down";
+    bottom: 25px; left: 0px;
+}
+
+@keyframes indicate {
+      0% { bottom: 10% }
+    100% { bottom: -10%; opacity: 0 }
+}
+#container
+{
+    height:2000px;    
+}
+
+#container div
+{ 
+    margin:50px; 
+    padding:50px; 
+    background-color:lightgreen; 
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+
+#container .arrow {
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    position: fixed;
+    margin-left: 0px;
+    animation: indicate 2s linear infinite;
+	background-color: transparent;
+}
